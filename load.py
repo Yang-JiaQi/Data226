@@ -33,7 +33,7 @@ def extractTransform():
 
 @task
 def load(records):
-#    # create table of replace it if exist
+    # create table of replace it if exist
     sql1 = f"""
     CREATE OR REPLACE TABLE {target_table} (
         date varchar(32) PRIMARY KEY,
